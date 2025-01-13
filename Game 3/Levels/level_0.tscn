@@ -1,0 +1,293 @@
+[gd_scene load_steps=16 format=3 uid="uid://dl35yhltkpo4r"]
+
+[ext_resource type="Script" path="res://Levels/Platforms/Scripts/Platform.cs" id="1_6rqna"]
+[ext_resource type="PackedScene" uid="uid://dqmabl5663tdc" path="res://Levels/Platforms/TripleTurtle.tscn" id="2_8nkun"]
+[ext_resource type="PackedScene" uid="uid://c3ryq0101qg7k" path="res://Levels/Platforms/DoubleTurtle.tscn" id="3_cbpqk"]
+[ext_resource type="PackedScene" uid="uid://dg4ndfokkdbil" path="res://Levels/Platforms/SmallLog.tscn" id="3_r8eoc"]
+[ext_resource type="PackedScene" uid="uid://7q8iwtlwd7yg" path="res://Levels/Platforms/LongLog.tscn" id="4_4vakf"]
+[ext_resource type="PackedScene" uid="uid://cv6888dc8c5el" path="res://Levels/Backgrounds/background.tscn" id="6_0lnou"]
+[ext_resource type="PackedScene" uid="uid://cxfcf3fenul0b" path="res://Levels/Platforms/MidLog.tscn" id="6_17uby"]
+[ext_resource type="PackedScene" uid="uid://xwqxkxioyqk7" path="res://Levels/Hazards/SmallVehicle.tscn" id="6_hxeg5"]
+[ext_resource type="PackedScene" uid="uid://ckm2wh32ycgq6" path="res://Levels/Hazards/SmallVehicle_03.tscn" id="7_24mpr"]
+[ext_resource type="PackedScene" uid="uid://dkevifi486rh0" path="res://Levels/Hazards/LargeVehicle.tscn" id="7_50gg5"]
+[ext_resource type="PackedScene" uid="uid://bubcewjvuft03" path="res://Levels/Hazards/SmallVehicle_02.tscn" id="8_f8mrd"]
+[ext_resource type="PackedScene" uid="uid://d2o6rdmq04e6x" path="res://Levels/Hazards/SmallVehicle_01.tscn" id="8_nlbn6"]
+[ext_resource type="PackedScene" uid="uid://pp21efbxdte" path="res://Levels/ScoreArea.tscn" id="10_k00k4"]
+[ext_resource type="PackedScene" uid="uid://duu1lwi5govak" path="res://Levels/Endzone.tscn" id="11_d1nbr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftj5n"]
+size = Vector2(832, 20)
+
+[node name="Level0" type="Node"]
+
+[node name="Background" parent="." instance=ExtResource("6_0lnou")]
+
+[node name="SafeZone" type="Area2D" parent="." groups=["Safezone"]]
+position = Vector2(416, 456)
+script = ExtResource("1_6rqna")
+speed = 0.0
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SafeZone"]
+shape = SubResource("RectangleShape2D_ftj5n")
+
+[node name="WaterObstacles" type="Node" parent="."]
+
+[node name="Row0" type="Node" parent="WaterObstacles"]
+
+[node name="TripleTurtle" parent="WaterObstacles/Row0" instance=ExtResource("2_8nkun")]
+position = Vector2(288, 416)
+
+[node name="TripleTurtle4" parent="WaterObstacles/Row0" instance=ExtResource("2_8nkun")]
+position = Vector2(0, 416)
+
+[node name="TripleTurtle2" parent="WaterObstacles/Row0" instance=ExtResource("2_8nkun")]
+position = Vector2(672, 416)
+
+[node name="TripleTurtle3" parent="WaterObstacles/Row0" instance=ExtResource("2_8nkun")]
+position = Vector2(1056, 416)
+
+[node name="Row1" type="Node" parent="WaterObstacles"]
+
+[node name="SmallLog" parent="WaterObstacles/Row1" instance=ExtResource("3_r8eoc")]
+position = Vector2(32, 352)
+speed = 60.0
+moveLeft = false
+
+[node name="SmallLog1" parent="WaterObstacles/Row1" instance=ExtResource("3_r8eoc")]
+position = Vector2(736, 352)
+speed = 60.0
+moveLeft = false
+
+[node name="SmallLog3" parent="WaterObstacles/Row1" instance=ExtResource("3_r8eoc")]
+position = Vector2(1056, 352)
+speed = 60.0
+moveLeft = false
+
+[node name="SmallLog4" parent="WaterObstacles/Row1" instance=ExtResource("3_r8eoc")]
+position = Vector2(352, 352)
+speed = 60.0
+moveLeft = false
+
+[node name="Row2" type="Node" parent="WaterObstacles"]
+
+[node name="LongLog" parent="WaterObstacles/Row2" instance=ExtResource("4_4vakf")]
+position = Vector2(0, 288)
+speed = 120.0
+moveLeft = false
+
+[node name="LongLog2" parent="WaterObstacles/Row2" instance=ExtResource("4_4vakf")]
+position = Vector2(768, 288)
+speed = 120.0
+moveLeft = false
+
+[node name="Row3" type="Node" parent="WaterObstacles"]
+
+[node name="DoubleTurtle" parent="WaterObstacles/Row3" instance=ExtResource("3_cbpqk")]
+position = Vector2(32, 224)
+speed = 100.0
+
+[node name="DoubleTurtle2" parent="WaterObstacles/Row3" instance=ExtResource("3_cbpqk")]
+position = Vector2(408, 224)
+speed = 100.0
+
+[node name="DoubleTurtle4" parent="WaterObstacles/Row3" instance=ExtResource("3_cbpqk")]
+position = Vector2(736, 224)
+speed = 100.0
+
+[node name="DoubleTurtle5" parent="WaterObstacles/Row3" instance=ExtResource("3_cbpqk")]
+position = Vector2(1056, 224)
+speed = 100.0
+
+[node name="Row4" type="Node" parent="WaterObstacles"]
+
+[node name="MidLog" parent="WaterObstacles/Row4" instance=ExtResource("6_17uby")]
+position = Vector2(160, 160)
+speed = 80.0
+moveLeft = false
+
+[node name="MidLog3" parent="WaterObstacles/Row4" instance=ExtResource("6_17uby")]
+position = Vector2(544, 160)
+speed = 80.0
+moveLeft = false
+
+[node name="MidLog2" parent="WaterObstacles/Row4" instance=ExtResource("6_17uby")]
+position = Vector2(1056, 160)
+speed = 80.0
+moveLeft = false
+
+[node name="RoadObstacles" type="Node" parent="."]
+
+[node name="Row0" type="Node" parent="RoadObstacles"]
+
+[node name="SmallVehicle" parent="RoadObstacles/Row0" instance=ExtResource("7_24mpr")]
+position = Vector2(-96, 800)
+speed = 90.0
+
+[node name="SmallVehicle2" parent="RoadObstacles/Row0" instance=ExtResource("7_24mpr")]
+position = Vector2(160, 800)
+speed = 90.0
+
+[node name="SmallVehicle9" parent="RoadObstacles/Row0" instance=ExtResource("7_24mpr")]
+position = Vector2(352, 800)
+speed = 90.0
+
+[node name="SmallVehicle10" parent="RoadObstacles/Row0" instance=ExtResource("7_24mpr")]
+position = Vector2(608, 800)
+speed = 90.0
+
+[node name="SmallVehicle11" parent="RoadObstacles/Row0" instance=ExtResource("7_24mpr")]
+position = Vector2(800, 800)
+speed = 90.0
+
+[node name="SmallVehicle12" parent="RoadObstacles/Row0" instance=ExtResource("7_24mpr")]
+position = Vector2(1056, 800)
+speed = 90.0
+
+[node name="Row1" type="Node" parent="RoadObstacles"]
+
+[node name="SmallVehicle" parent="RoadObstacles/Row1" instance=ExtResource("6_hxeg5")]
+position = Vector2(-32, 736)
+speed = 70.0
+moveLeft = false
+
+[node name="SmallVehicle2" parent="RoadObstacles/Row1" instance=ExtResource("6_hxeg5")]
+position = Vector2(224, 736)
+speed = 70.0
+moveLeft = false
+
+[node name="SmallVehicle3" parent="RoadObstacles/Row1" instance=ExtResource("6_hxeg5")]
+position = Vector2(416, 736)
+speed = 70.0
+moveLeft = false
+
+[node name="SmallVehicle4" parent="RoadObstacles/Row1" instance=ExtResource("6_hxeg5")]
+position = Vector2(608, 736)
+speed = 70.0
+moveLeft = false
+
+[node name="SmallVehicle6" parent="RoadObstacles/Row1" instance=ExtResource("6_hxeg5")]
+position = Vector2(864, 736)
+speed = 70.0
+moveLeft = false
+
+[node name="SmallVehicle5" parent="RoadObstacles/Row1" instance=ExtResource("6_hxeg5")]
+position = Vector2(-288, 736)
+speed = 70.0
+moveLeft = false
+
+[node name="Row2" type="Node" parent="RoadObstacles"]
+
+[node name="SmallVehicle7" parent="RoadObstacles/Row2" instance=ExtResource("8_f8mrd")]
+position = Vector2(-96, 672)
+speed = 90.0
+
+[node name="SmallVehicle8" parent="RoadObstacles/Row2" instance=ExtResource("8_f8mrd")]
+position = Vector2(160, 672)
+speed = 90.0
+
+[node name="SmallVehicle9" parent="RoadObstacles/Row2" instance=ExtResource("8_f8mrd")]
+position = Vector2(352, 672)
+speed = 90.0
+
+[node name="SmallVehicle10" parent="RoadObstacles/Row2" instance=ExtResource("8_f8mrd")]
+position = Vector2(608, 672)
+speed = 90.0
+
+[node name="SmallVehicle11" parent="RoadObstacles/Row2" instance=ExtResource("8_f8mrd")]
+position = Vector2(800, 672)
+speed = 90.0
+
+[node name="SmallVehicle12" parent="RoadObstacles/Row2" instance=ExtResource("8_f8mrd")]
+position = Vector2(1056, 672)
+speed = 90.0
+
+[node name="Row3" type="Node" parent="RoadObstacles"]
+
+[node name="SmallVehicle_01" parent="RoadObstacles/Row3" instance=ExtResource("8_nlbn6")]
+position = Vector2(96, 608)
+speed = 450.0
+moveLeft = false
+
+[node name="SmallVehicle_02" parent="RoadObstacles/Row3" instance=ExtResource("8_nlbn6")]
+position = Vector2(288, 608)
+speed = 450.0
+moveLeft = false
+
+[node name="Row4" type="Node" parent="RoadObstacles"]
+
+[node name="LargeVehicle" parent="RoadObstacles/Row4" instance=ExtResource("7_50gg5")]
+position = Vector2(64, 544)
+speed = 50.0
+
+[node name="LargeVehicle2" parent="RoadObstacles/Row4" instance=ExtResource("7_50gg5")]
+position = Vector2(384, 544)
+speed = 50.0
+
+[node name="LargeVehicle3" parent="RoadObstacles/Row4" instance=ExtResource("7_50gg5")]
+position = Vector2(704, 544)
+speed = 50.0
+
+[node name="LargeVehicle4" parent="RoadObstacles/Row4" instance=ExtResource("7_50gg5")]
+position = Vector2(1024, 544)
+speed = 50.0
+
+[node name="ScoreZones" type="Node" parent="."]
+
+[node name="ScoreArea" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 784)
+
+[node name="ScoreArea2" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 720)
+
+[node name="ScoreArea3" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 664)
+
+[node name="ScoreArea4" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 592)
+
+[node name="ScoreArea5" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 528)
+
+[node name="ScoreArea6" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 400)
+
+[node name="ScoreArea7" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 336)
+
+[node name="ScoreArea8" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 272)
+
+[node name="ScoreArea9" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 208)
+
+[node name="ScoreArea10" parent="ScoreZones" instance=ExtResource("10_k00k4")]
+position = Vector2(416, 144)
+
+[node name="Endzones" type="Node" parent="."]
+
+[node name="Endzone" parent="Endzones" instance=ExtResource("11_d1nbr")]
+z_index = 1
+position = Vector2(416, 96)
+
+[node name="Endzone2" parent="Endzones" instance=ExtResource("11_d1nbr")]
+z_index = 1
+position = Vector2(224, 96)
+
+[node name="Endzone3" parent="Endzones" instance=ExtResource("11_d1nbr")]
+z_index = 1
+position = Vector2(608, 96)
+
+[node name="Endzone4" parent="Endzones" instance=ExtResource("11_d1nbr")]
+z_index = 1
+position = Vector2(800, 96)
+
+[node name="Endzone5" parent="Endzones" instance=ExtResource("11_d1nbr")]
+z_index = 1
+position = Vector2(32, 96)
+
+[node name="startPoint" type="Node2D" parent="."]
+position = Vector2(1056, 96)
+
+[node name="endPoint" type="Node2D" parent="."]
+position = Vector2(-288, 96)

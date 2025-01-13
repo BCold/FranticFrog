@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://u7qgxolhcg1c"]
+
+[ext_resource type="Script" path="res://Pawns/Player/Player.cs" id="1_muuov"]
+[ext_resource type="Texture2D" uid="uid://cdsicsk7qg7s1" path="res://Pawns/Player/frog_test_sprite.png" id="2_ysokj"]
+[ext_resource type="Texture2D" uid="uid://doj3duxs287mv" path="res://Pawns/Player/frog_test_sprite_jump.png" id="3_6py1s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhp0w"]
+atlas = ExtResource("3_6py1s")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phdny"]
+atlas = ExtResource("3_6py1s")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v672o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ysokj")
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhp0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phdny")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yny1q"]
+size = Vector2(46, 43)
+
+[node name="Player" type="Area2D"]
+z_index = 1
+script = ExtResource("1_muuov")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_v672o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_yny1q")

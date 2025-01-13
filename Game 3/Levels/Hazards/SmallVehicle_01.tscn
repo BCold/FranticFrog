@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2o6rdmq04e6x"]
+
+[ext_resource type="Script" path="res://Levels/Hazards/Scripts/Vehicle.cs" id="1_37lvr"]
+[ext_resource type="Texture2D" uid="uid://dj1m1yr61jkt7" path="res://Levels/Backgrounds/Textures/smallVehicle_01_Sprite.png" id="2_xilck"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gh6yw"]
+size = Vector2(56, 32)
+
+[node name="SmallVehicle" type="Area2D"]
+z_index = 2
+monitoring = false
+script = ExtResource("1_37lvr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gh6yw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_xilck")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://rfurrcon2pas"]
+
+[ext_resource type="Texture2D" uid="uid://bleeorlvubpq7" path="res://Levels/Backgrounds/Textures/BGTest.png" id="1_rl3r0"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(415.625, 448.5)
+scale = Vector2(0.63327, 0.623259)
+texture = ExtResource("1_rl3r0")

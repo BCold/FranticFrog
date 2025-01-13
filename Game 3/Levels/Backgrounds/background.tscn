@@ -1,0 +1,1199 @@
+[gd_scene load_steps=9 format=3 uid="uid://cv6888dc8c5el"]
+
+[ext_resource type="Texture2D" uid="uid://dlym17l6plr0e" path="res://Levels/Backgrounds/Textures/grass_texture.png" id="1_c55k6"]
+[ext_resource type="Texture2D" uid="uid://b2m66peq2rs8p" path="res://Levels/Backgrounds/Textures/SideWalk_Texture.png" id="1_tabj0"]
+[ext_resource type="Texture2D" uid="uid://c6ryg1u0mfb6j" path="res://Levels/Backgrounds/Textures/road_outside_texture.png" id="3_wavpg"]
+[ext_resource type="Texture2D" uid="uid://dggn8ncmglr11" path="res://Levels/Backgrounds/Textures/road_center_texture.png" id="3_xwfdx"]
+[ext_resource type="Texture2D" uid="uid://d17g7v5vihsa5" path="res://Levels/Backgrounds/Textures/water_texture.png" id="5_sjnus"]
+
+[sub_resource type="Gradient" id="Gradient_ldr5r"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_quyar"]
+gradient = SubResource("Gradient_ldr5r")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_21s1d"]
+
+[node name="Background" type="Node"]
+
+[node name="UI Area" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(416, 32)
+scale = Vector2(13, 1)
+texture = SubResource("GradientTexture2D_quyar")
+
+[node name="SafeZones" type="Node" parent="."]
+
+[node name="ScoreZone" type="Sprite2D" parent="SafeZones"]
+position = Vector2(32, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="ScoreZone3" type="Sprite2D" parent="SafeZones"]
+position = Vector2(416, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="ScoreZone4" type="Sprite2D" parent="SafeZones"]
+position = Vector2(608, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="ScoreZone5" type="Sprite2D" parent="SafeZones"]
+position = Vector2(800, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="ScoreZone2" type="Sprite2D" parent="SafeZones"]
+position = Vector2(224, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D28" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(96, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D29" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(160, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D30" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(288, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D31" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(352, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D32" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(480, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D33" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(544, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D34" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(672, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D35" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(736, 96)
+scale = Vector2(2, 2)
+texture = ExtResource("1_c55k6")
+
+[node name="Sprite2D" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(32, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(96, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(160, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D4" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(224, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D19" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(288, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D20" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(352, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D21" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(416, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D22" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(480, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D23" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(544, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D24" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(608, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D25" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(672, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D26" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(736, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D27" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(800, 864)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D5" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(32, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D6" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(96, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D7" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(160, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D8" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(224, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D9" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(288, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D10" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(352, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D11" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(416, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D12" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(480, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D14" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(544, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D15" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(608, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D16" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(672, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D17" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(736, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="Sprite2D18" type="Sprite2D" parent="SafeZones"]
+z_index = -1
+position = Vector2(800, 480)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tabj0")
+
+[node name="RoadZones" type="Node" parent="."]
+
+[node name="Sprite2D2" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+position = Vector2(416, 800)
+scale = Vector2(13, 1)
+texture = SubResource("GradientTexture2D_quyar")
+
+[node name="Sprite2D3" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+position = Vector2(416, 736)
+scale = Vector2(13, 1)
+texture = SubResource("CompressedTexture2D_21s1d")
+
+[node name="Sprite2D4" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+position = Vector2(416, 672)
+scale = Vector2(13, 1)
+texture = SubResource("CompressedTexture2D_21s1d")
+
+[node name="Sprite2D6" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+position = Vector2(416, 608)
+scale = Vector2(13, 1)
+texture = SubResource("CompressedTexture2D_21s1d")
+
+[node name="Sprite2D7" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(32, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D8" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(96, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D9" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(160, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D10" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(224, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D11" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(288, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D12" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(352, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D13" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(416, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D14" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(480, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D15" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(544, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D16" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(608, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D17" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(672, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D18" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(736, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D19" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(800, 544)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+flip_v = true
+
+[node name="Sprite2D20" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(32, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D21" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(96, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D22" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(160, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D23" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(224, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D24" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(288, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D25" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(352, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D26" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(416, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D27" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(480, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D28" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(544, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D29" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(608, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D30" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(672, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D31" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(736, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D32" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(800, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+
+[node name="Sprite2D33" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(32, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D34" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(96, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D35" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(160, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D36" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(224, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D37" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(288, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D38" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(352, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D39" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(416, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D40" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(480, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D41" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(544, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D42" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(608, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D43" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(672, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D44" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(736, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D45" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(800, 672)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D46" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(32, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D47" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(96, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D48" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(160, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D49" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(224, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D50" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(288, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D51" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(352, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D52" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(416, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D53" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(480, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D54" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(544, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D55" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(608, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D56" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(672, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D57" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(736, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D58" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(800, 736)
+scale = Vector2(4, 4)
+texture = ExtResource("3_xwfdx")
+flip_v = true
+
+[node name="Sprite2D59" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(32, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D60" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(96, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D61" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(160, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D62" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(224, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D63" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(288, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D64" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(352, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D65" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(416, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D66" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(480, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D67" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(544, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D68" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(608, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D69" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(672, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D70" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(736, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="Sprite2D71" type="Sprite2D" parent="RoadZones"]
+z_index = -1
+texture_repeat = 2
+position = Vector2(800, 800)
+scale = Vector2(4, 4)
+texture = ExtResource("3_wavpg")
+
+[node name="WaterZones" type="Node" parent="."]
+
+[node name="Sprite2D12" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(32, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D13" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(96, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D14" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(160, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D15" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(224, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D16" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(224, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D17" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(288, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D18" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(416, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D20" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(480, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D21" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(544, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D22" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(608, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D23" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(672, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D24" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(736, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D25" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(800, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D19" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(352, 160)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D26" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(32, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D27" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(96, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D28" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(160, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D29" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(224, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D30" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(288, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D31" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(416, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D32" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(480, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D33" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(544, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D34" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(608, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D35" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(672, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D36" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(736, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D37" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(800, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D38" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(352, 224)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D39" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(32, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D40" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(96, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D41" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(160, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D42" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(224, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D43" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(288, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D44" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(416, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D45" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(480, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D46" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(544, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D47" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(608, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D48" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(672, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D49" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(736, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D50" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(800, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D51" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(352, 288)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D52" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(32, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D53" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(96, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D54" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(160, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D55" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(224, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D56" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(288, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D57" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(416, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D58" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(480, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D59" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(544, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D60" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(608, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D61" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(672, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D62" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(736, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D63" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(800, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D64" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(352, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+
+[node name="Sprite2D65" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(32, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D66" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(96, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D67" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(160, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D68" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(224, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D69" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(288, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D70" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(416, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D71" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(480, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D72" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(544, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D73" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(608, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D74" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(672, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D75" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(736, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D76" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(800, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true
+
+[node name="Sprite2D77" type="Sprite2D" parent="WaterZones"]
+z_index = -1
+position = Vector2(352, 416)
+scale = Vector2(2, 2)
+texture = ExtResource("5_sjnus")
+flip_h = true

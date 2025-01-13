@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://c3ryq0101qg7k"]
+
+[ext_resource type="Script" path="res://Levels/Platforms/Scripts/Platform.cs" id="1_fam3a"]
+[ext_resource type="Texture2D" uid="uid://xjfsg4hw7dy6" path="res://Levels/Platforms/Materials/doubleTurtle_Sprite.png" id="2_c11tq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mvj4"]
+size = Vector2(68, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4hqe"]
+atlas = ExtResource("2_c11tq")
+region = Rect2(0, 64, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ey13c"]
+atlas = ExtResource("2_c11tq")
+region = Rect2(64, 64, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76iux"]
+atlas = ExtResource("2_c11tq")
+region = Rect2(128, 64, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mabur"]
+atlas = ExtResource("2_c11tq")
+region = Rect2(0, 32, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v6ttt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4hqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ey13c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76iux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mabur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.25
+}]
+
+[node name="DoubleTurtle" type="Area2D" groups=["AnimatedObstacle"]]
+monitoring = false
+script = ExtResource("1_fam3a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7mvj4")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.90735e-06, 0)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_v6ttt")
+autoplay = "default"
+frame_progress = 0.125849

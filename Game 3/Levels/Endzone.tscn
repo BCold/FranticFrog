@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://duu1lwi5govak"]
+
+[ext_resource type="Script" path="res://Levels/Platforms/Scripts/Platform.cs" id="1_5duke"]
+[ext_resource type="Texture2D" uid="uid://w51otqgl4o5r" path="res://Levels/Backgrounds/Textures/lilly_pad_filled.png" id="2_xtbr0"]
+[ext_resource type="Texture2D" uid="uid://cj3d658i8vtf" path="res://Levels/Backgrounds/Textures/lilly_pad.png" id="4_fart6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5dkal"]
+size = Vector2(64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r8xux"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xtbr0")
+}],
+"loop": false,
+"name": &"change",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_fart6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Endzone" type="Area2D" groups=["Endzone"]]
+monitoring = false
+script = ExtResource("1_5duke")
+speed = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5dkal")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_r8xux")

@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpyq53yaxqmc5"]
+
+[ext_resource type="Script" path="res://Levels/Platforms/Scripts/Platform.cs" id="1_ldf1u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_22llo"]
+size = Vector2(324, 64)
+
+[sub_resource type="Gradient" id="Gradient_0vdlq"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.45, 0.3195, 0.18, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3n3b3"]
+gradient = SubResource("Gradient_0vdlq")
+width = 384
+height = 42
+
+[node name="LargeLog" type="Area2D"]
+monitoring = false
+script = ExtResource("1_ldf1u")
+speed = null
+moveLeft = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_22llo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_3n3b3")
